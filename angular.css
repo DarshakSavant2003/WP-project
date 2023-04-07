@@ -1,0 +1,86 @@
+.navbar{
+    background-color: lightgray;
+    height: 65px;
+    
+}
+.navbar ul{
+    overflow: auto;
+}
+.navbar li{
+    float: left;
+    list-style: none;
+    padding: 20px 15px;
+    text-decoration: none;
+    color: black;
+}
+.navbar li a{
+    text-decoration: none;
+    font-family: 'Antic Slab', serif;
+    font-size: 25px;
+    height: 5px;
+    color: black;
+}
+
+.navbar input{
+    height: 35px;
+    
+    margin: 5px;
+    border-radius: 20px;
+ font-family: 'DM Serif Display', serif;
+
+
+    
+}
+#des {
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Antic Slab', serif;
+}
+.navbar li a:hover{
+    color: rgb(255, 85, 0);
+}
+.image{
+    text-align: center;
+    padding-top: 20px;
+    background-repeat: no-repeat;
+    /* background-color: aqua; */
+    padding-bottom: 20px;
+
+}
+.container{
+    background-color:white;
+    height: fit-content;
+    padding: 5px 5px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 5px;
+  margin-top: 10px;
+}
+
+.nav_links{
+    color: #464a4e;
+}
+body{
+    background-image: url("https://media-cldnry.s-nbcnews.com/image/upload/rockcms/2022-03/plant-based-food-mc-220323-02-273c7b.jpg");
+}
+.form{
+    margin-right: .75rem;
+    margin-left: .75rem;
+    background-color: white;
+    width: 735px;
+    margin: auto;
+    width: 50%;
+    border: 8px solid lightpink;
+    padding: 10px;
+    border-radius: 20px;
+
+    /* text-align: center; */
+}
+.wrapper{
+    background-color: white;
+    display: block;
+}
+.tbody{
+    background-color: aliceblue;
+}

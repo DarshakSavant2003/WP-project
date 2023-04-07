@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="register.css">
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Slab&display=swap" rel="stylesheet">
+    <script src="register.js"></script>
+</head>
+<body style="background-color: lightpink;">
+    <header><nav class="navbar">
+         <ul class="nav_links">
+            <li> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFYeNYuXkAwGJ2JzgjfsEHG2O2k1ky-GUVuH-IpAj62Zh36QJmrywOrY1ABMKDcvUZpVk&usqp=CAU" height="40"width="50" class="emmu"></li>
+            <li><a class="navbar-brand">FOOD NETWORK</a></li>
+             <li><a href="AboutUs.html">About</a></li>
+             <li><a href="cookingwebsite.html">Homepage</a></li>
+             <li><a href="Register.html">Register</a></li>
+             <li><a href="Recipies.html">Recipes</a></li>
+             <li><a href="angular.html">Angular</a></li>
+             <li><a href="login.html">Login</a></li>
+         </ul></nav></header>
+    <h1 class="head">Register Page</h1>
+<div class="form">
+        <h2 class="headers">Please enter your details</h2>
+        <form name="Mainform" action="Database.php" method="post" onkeyup="return validateform()">
+        <div class="row">
+        <p class="input">Enter Your First Name: <input name ="fname" type="text" size="30" required></p>
+        <div  class="error" id="nameErr"></div>
+        </div>
+        <div class="row">
+            <p class="input">Enter Your Last Name: <input name ="lastn" type="text" size="30" required></p>
+            <div  class="error" id="BuntyErr"></div>
+            </div>
+        <p class="input">Enter Your Date of Birth: <input type="date" size="30" required name="DOB"></p>
+        <label>Select Gender</label><br>
+        <input type="Radio" name="Gender"/>Male<br>
+        <input type="Radio"name="Gender"/>Female<br>
+        <input type="Radio"name="Gender"/>Others<br>
+        <div class="row">
+        <p class="input">Enter Your Email ID :<input type="text" name="email" size="30" placeholder="Email" required></p>
+        <div class="error" id="emailErr"></div>
+        </div>
+        <div class="row">
+        <p class="input">Enter Your Password :<input type="password" name="pass" size="30" placeholder="Password" required></p><br> 
+        <div class="error" id="passErr"></div>
+        </div>
+        <input type="submit" value="Sign Up" class="button"  name="save" >
+        </form>
+
+        </div>
+
+</body>
+</html>

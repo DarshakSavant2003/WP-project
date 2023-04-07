@@ -1,0 +1,105 @@
+.logo{
+    text-align: left;
+    text-decoration-color: blueviolet;
+    
+}
+.head{
+    text-align: center;
+    font-family: 'Antic Slab', serif;
+}
+.image{
+    float: right;
+    height: 625px;
+    width: 500px;
+}
+.headers{
+    text-align: left;
+    font-family: 'Antic Slab', serif;
+
+}
+.form{
+    font-size: 20px;
+    font-family: 'Antic Slab', serif;
+}
+.button{
+    display: block;
+    height: 30px;
+    width: 238px;
+    background-color: black;
+    color: azure ;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+.input{
+    width: 240px;
+    display:   block;
+   
+}
+
+.form{
+    margin-right: .75rem;
+    margin-left: .75rem;
+    background-color: white;
+    width: 735px;
+    margin: auto;
+    width: 50%;
+    border: 8px solid lightpink;
+    padding: 10px;
+    border-radius: 20px;
+
+    /* text-align: center; */
+}
+.row{
+    background-color: aliceblue;
+}
+body{
+    background-image: url("https://media-cldnry.s-nbcnews.com/image/upload/rockcms/2022-03/plant-based-food-mc-220323-02-273c7b.jpg");
+}
+.head{
+    color: white;
+    font-style: bold;
+    font-size: 50px;
+   
+}
+.navbar{
+    background-color: lightgray;
+    height: 65px;
+    
+}
+.navbar ul{
+    overflow: auto;
+}
+.navbar li{
+    float: left;
+    list-style: none;
+    padding: 20px 15px;
+    text-decoration: none;
+    color: black;
+}
+.navbar li a{
+    text-decoration: none;
+    font-family: 'Antic Slab', serif;
+    font-size: 25px;
+    height: 5px;
+    color: black;
+}
+
+.navbar input{
+    height: 35px;
+    
+    margin: 5px;
+    border-radius: 20px;
+ font-family: 'DM Serif Display', serif;
+
+
+    
+}
+#des {
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Antic Slab', serif;
+}
+.navbar li a:hover{
+    color: rgb(255, 85, 0);
+}

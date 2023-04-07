@@ -1,0 +1,160 @@
+<html>
+<head>
+   <title>Angular JS Table</title>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+   <link rel="stylesheet" href="newindexstyles.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="angular.css">
+</head>
+
+<body>
+   <header>
+      <nav class="navbar">
+       <ul class="nav_links">
+           <li> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFYeNYuXkAwGJ2JzgjfsEHG2O2k1ky-GUVuH-IpAj62Zh36QJmrywOrY1ABMKDcvUZpVk&usqp=CAU" height="40"width="50"></li>
+           <li><a class="navbar-brand">FOOD NETWORK</a></li>
+           <li><a href="AboutUs.html">About</a></li>
+           <li><a href="cookingwebsite.html">Homepage</a></li>
+           <li><a href="Register.html">Register</a></li>
+           <li><a href="Recipies.html">Recipes</a></li>
+           <li><a href="login.html">Login</a></li>
+       
+       <!-- <div class="search">
+           <input type="text" placeholder="Search..">
+       </div> -->
+       </ul>
+      </nav> 
+      </header>
+<br>
+   <div ng-app="mainApp" ng-controller="studentController">
+<br>
+      <table border="10" align = 'center' class="tbody" >
+      <div class="wrapper">
+         <tr>
+            <td>Enter first name:</td>
+            <td><input type="text" ng-model="student.firstName"></td>
+         </tr>
+         <tr>
+            <td>Enter last name: </td>
+            <td>
+               <input type="text" ng-model="student.lastName">
+            </td>
+         </tr>
+         <tr>
+            <td>Name: </td>
+            <td>{{student.fullName()}}</td>
+         </tr>
+         <tr>
+            <th>WP</th>
+            <th>Marks: <input type="text" ng-model="student.marks1"></th>
+         </tr>
+         <tr>
+            <th>Computer Networks</th>
+            <th>Marks: <input type="text" ng-model="student.marks2"></th>
+         </tr>
+         <tr>
+            <th>Operating System</th>
+            <th>Marks:<input type="text" ng-model="student.marks3"> </th>
+         </tr>
+         <tr>
+            <th>DBMS</th>
+            <th>Marks: <input type="text" ng-model="student.marks4"></th>
+         </tr>
+         <tr>
+            <th>JAVA Programming</th>
+            <th>Marks:<input type="text" ng-model="student.marks5"> </th></tr><tr>
+            <td>Subject:</td><td><table><tr>
+                     <td>WP</td>
+                     <td>{{ student.submarks1() }}</td>
+                  </tr>
+                  <tr>
+                     <td>CN</td>
+                     <td>{{ student.submarks2() }}</td>
+                  </tr>
+                  <tr>
+                     <td>OS</td>
+                     <td>{{ student.submarks3() }}</td>
+                  </tr>
+                  <tr>
+                     <td>DBMS</td>
+                     <td>{{ student.submarks4() }}</td>
+                  </tr>
+                  <tr>
+                     <td>JAVA</td>
+                     <td>{{ student.submarks5() }}</td>
+                  </tr>
+                  <tr>
+                     <td>Total</td>
+                     <td>{{ student.total() }}</td>
+                  </tr>
+                  <tr>
+                     <td>percent</td>
+                     <td>{{ student.percent() }}</td></tr></table></td></tr></table></div></div><script>
+      var mainApp = angular.module("mainApp", []);
+      mainApp.controller('studentController', function ($scope) {
+         $scope.student = {
+            firstName: "",
+            lastName: "",
+            marks1: "0",
+            marks2: "0",
+            marks3: "0",
+            marks4: "0",
+            marks5: "0",
+            subjects: [
+               { name: 'Web Programming'},
+               { name: 'Computer Networks'},
+               { name: 'Operating System'},
+               { name: 'DBMS'},
+               { name: 'JAVA Programming'}
+            ],
+            fullName: function () {
+               var studentObject;
+               studentObject = $scope.student;
+               return studentObject.firstName + " " + studentObject.lastName;
+            },
+            submarks1: function () {
+               var studentObj,total;
+               studentObj = $scope.student;
+               return studentObj.marks1;
+            },
+            submarks2: function () {
+               var studentObj,total;
+               studentObj = $scope.student;
+               return studentObj.marks2;
+            },
+            submarks3: function () {
+               var studentObj,total;
+               studentObj = $scope.student;
+               return studentObj.marks3;
+            },
+            submarks4: function () {
+               var studentObj,total;
+               studentObj = $scope.student;
+               return studentObj.marks4;
+            },
+            submarks5: function () {
+               var studentObj,total;
+               studentObj = $scope.student;
+               return studentObj.marks5;
+            },
+            total: function(){
+               var totals;
+               totals=$scope.student;
+               var total=parseInt(totals.marks1)+parseInt(totals.marks2)+parseInt(totals.marks3)+parseInt(totals.marks4)+parseInt(totals.marks5);
+               return total;
+            },
+            percent
+            : function(){
+               var percent;
+               percent=$scope.student;
+               var per=(parseInt(percent.marks1)+parseInt(percent.marks2)+parseInt(percent.marks3)+parseInt(percent.marks4)+parseInt(percent.marks5))/5;
+               return per;
+            }
+         };
+      });z
+   </script>
+</body>
+
+</html>

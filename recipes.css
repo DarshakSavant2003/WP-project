@@ -1,0 +1,92 @@
+.para2{
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Antic Slab', serif;
+  }
+  .heading{
+    text-align: center;
+    font-family: 'Antic Slab', serif;
+  }
+
+  .row{
+ 
+    /* float: left; */
+    border: 2px black;
+    display: flex;
+  }
+  .column{
+    width: 40%;
+    margin-right:100px ;
+  }
+  
+  .image{
+    display: block;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 75%;
+    border-radius: 20px;
+  }
+  .column1{
+    width: 50%;
+    border: 2px black;
+
+  }
+  .header{
+    display: flex;
+    background-color:  red;
+    height: 60px;
+    
+  }
+  .para1{
+    font-size: 25px; 
+    font-family: 'DM Serif Display', serif;
+    color: aliceblue;
+  }
+  .logo{
+    margin-left: 30px;
+  }
+  .navbar{
+    background-color: lightgrey;
+    height: 65px;
+    
+}
+.navbar ul{
+    overflow: auto;
+}
+.navbar li{
+    float: left;
+    list-style: none;
+    padding: 20px 15px;
+    text-decoration: none;
+    color: black;
+}
+.navbar li a{
+    text-decoration: none;
+    font-family: 'Antic Slab', serif;
+    font-size: 25px;
+    height: 5px;
+    color: black;
+}
+
+
+#des {
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Antic Slab', serif;
+}
+.navbar li a:hover{
+    color: rgb(255, 85, 0);
+}
+.navbar input{
+  height: 35px;
+  
+  margin: 5px;
+  border-radius: 20px;
+font-family: 'DM Serif Display', serif;
+
+
+  
+}
+.search{
+  float: right;
+}
